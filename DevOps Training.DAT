@@ -26,7 +26,7 @@ DevOps:
 
 * What is DevOPs and how it appreciates Agile Methodology ?
 
-  DevOps is software development approach that stands for development and operations.Itís a practice that aims at merging development,quality assurance, 
+  DevOps is software development approach that stands for development and operations.It‚Äôs a practice that aims at merging development,quality assurance, 
   and operations (deployment and integration) into a single,continuous set of processes.This methodology is a natural extension for Agile and continuous 
   delivery approaches.
 
@@ -162,7 +162,7 @@ Day 2: (14.03.2020)
 
   IPV4 Subnetting:
 
-  Subnetting is the process of taking a network and splitting it into smaller networks, known as subnets. Itís used to free up more public IPv4 addresses 
+  Subnetting is the process of taking a network and splitting it into smaller networks, known as subnets. It‚Äôs used to free up more public IPv4 addresses 
   and segment networks for security and easier management.
 
   Here is what an IP or IPV4 looks like:
@@ -177,7 +177,7 @@ Day 2: (14.03.2020)
   _______________________________________________________
   1     0       0       0       0       0       0       0   = 129
 
-  When all the positions are ìturned on,î they add up to 255.
+  When all the positions are ‚Äúturned on,‚Äù they add up to 255.
 
 
  
@@ -205,20 +205,20 @@ Day 3: (15.03.2020)
 
   CVCSs have a 'single server' that contains all the versioned files,and a number of clients that check out files from that central place.
   However,this setup has some serious downsides.If the centralized server goes down for sometime,nobody can collaborate at all or save versioned 
-  changes to anything theyíre working on.If the hard disk the central database is on becomes corrupted, and proper backups havenít been kept, 
+  changes to anything they‚Äôre working on.If the hard disk the central database is on becomes corrupted, and proper backups haven‚Äôt been kept, 
   you lose absolutely everything-the entire history of the project except whatever single snapshots people happen to have on their local machines. 
 
   Ex: Subversion(SVN),CVS,and Perforce
 
   To rectify the above said issue Distributed Version Control Systems (DVCSs) step in. In a DVCS (such as Git, Mercurial, Bazaar or Darcs), 
-  clients donít just check out the latest snapshot of the files; rather, they fully mirror the repository, including its full history. Thus, 
+  clients don‚Äôt just check out the latest snapshot of the files; rather, they fully mirror the repository, including its full history. Thus, 
   if any server dies, and these systems were collaborating via that server, any of the client repositories can be copied back up to the server 
   to restore it.Every clone is really a full backup of all the data.
 
   What is Git?
 
-  Git is an open-source version control system that was started by Linus Torvaldsóthe same person who created Linux. Git is similar 
-  to other version control systemsóSubversion, CVS, and Mercurial to name a few.
+  Git is an open-source version control system that was started by Linus Torvalds‚Äîthe same person who created Linux. Git is similar 
+  to other version control systems‚ÄîSubversion, CVS, and Mercurial to name a few.
 
   NOTE: Git only takes a snapshot of the changed file and to optimize memory Git keeps a Reference of the file that has not changed 
         instead of making a copy of it in the new version.
@@ -283,7 +283,7 @@ Day 3: (15.03.2020)
 
  Some more Commands:
 
- git add <File> :  adds file content to the saging area
+ git add <File> :  adds file content to the staging area
  git commit:  records a snapshot of the staging area
  git status: View status of your files in the working and staging directory
  git diff: Shows diff of what is staged and what is modified but unstaged
