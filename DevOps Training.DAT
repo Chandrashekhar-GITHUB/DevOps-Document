@@ -291,5 +291,5 @@ Day 3: (15.03.2020)
  git branch <branch_name> : Creates a new branch
  git checkout <branch_name>: Shift to the branch mentioned
  git megre <branch_name>: Merges changes in <branch_name> to the one you are in currently
- 
+ git branch -d <branch_name>: Deletes the branch 
   
