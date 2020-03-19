@@ -1,0 +1,293 @@
+DevOps:
+-------
+
+*  What is Systems/Software development life cycle (SDLC)? 
+
+  In Software Engineering,the SDLC,is a process for planning,creating,testing,and deploying an information system.
+  There are usually six stages in this cycle:
+
+  * Requirement analysis
+  * Design
+  * Development and Testing
+  * Implementation/Deployment
+  * Documentation
+  * Evaluation
+
+  Most popular SDLC models are 'Waterfall Model' and 'Agile Model'.
+
+  NOTE: DevOps follows Agile Methodology.
+
+* Agile Metodology:
+
+  Agile software development comprises various approaches to software development under which requirements and solutions evolve through the collaborative 
+  effort of self-organizing and cross-functional teams and their customer(s)/end user(s).It advocates adaptive planning, evolutionary development, 
+  early delivery, and continual improvement, and it encourages rapid and flexible response to change.In Agile we have Scrum which runs for 2-3 weeks 
+  and Kanban which runs for 1-3 months.
+
+* What is DevOPs and how it appreciates Agile Methodology ?
+
+  DevOps is software development approach that stands for development and operations.It’s a practice that aims at merging development,quality assurance, 
+  and operations (deployment and integration) into a single,continuous set of processes.This methodology is a natural extension for Agile and continuous 
+  delivery approaches.
+
+  Currently, existing DevOps tools cover almost all stages of continuous delivery, starting from continuous integration environments and ending with 
+  containerization and deployment. While today some of the processes are still automated with custom scripts,mostly DevOps engineers use various 
+  open source products/tools described below.
+
+  1.Jenkins: Tool to use either as a server for continuos integration or a continuos delivery hub that comes with lots of additional plugins to tweak 
+           continuos delivery workflow.
+
+  2.Git: Is a Version Control System with a repository for source code management that enables working online and offline.
+
+  3.Chef: Is a tool for infrastructure as code management that runs both on cloud and hardware servers.
+
+  4.Ansible: Automates configuration management,cloud provisioning,and application deployment.
+
+  5.Dockers: Is an instrument that helps with packaging code into self-contained units,i.e.containers.
+
+  NOTE: A Container is a standard unit of software that packages up code and all its dependencies so the application runs quickly and reliably from
+        one computing environment to another.A Docker container image is a lightweight, standalone, executable package of software that includes 
+        everything needed to run an application: code, runtime, system tools, system libraries and settings.
+
+  6.Nagios: Is an infrastructure monitoring tool that presents analytics in visual reports
+
+  7.Maven: Maven is a build automation tool used primarily for Java projects. Maven can also be used to build and manage projects 
+           written in C#, Ruby, Scala, and other languages.
+  8.JIRA: Tool used for bug tracking,issue tracking,and project management.
+
+
+* What is Kubernetes?
+
+  Kubernetes is an open source container orchestration platform, enabling multiple numbers of containers to work together in harmony, 
+  reducing operational burden.It manages application containers across multiple hosts.Similar to containers, it is designed to run on bare metal, 
+  in the data center,public cloud or even a hybrid cloud.
+  
+
+* Benefits of DevOps:
+
+  Implementing a DevOps practice can add value to your organization through a number of benefits, including the following:
+
+  1.Faster code delivery
+  2.Faster time to market
+  3.Higher-quality software
+  4.Improved collaboration between developers and operations
+  5.Decreased time to resolution for fixing bugs and vulnerabilities
+  6.A culture that brings business, development, and operations together for improved responsiveness to market demands
+
+  
+* Linux Commands - Documents shared to practice Linux commands. (07.03.2020)
+
+----------DevOPs----------DevOps----------Devops----------DevOps----------DevOps----------DevOps----------DevOps----------DevOps----------DevOps----------DevOps-------
+
+Day 1: (07.03.2020)
+
+ * LAMP Stack deployment in a Standalone Server(1 Server,all Services):
+   ____________________________________________________________________
+
+ What is Deployment phase in SDLC?
+
+ Software/Product deployment is all of the activities that makes a software system available for use.This process basically involves
+ installation,configuration,and troubleshooting activities.
+
+ What is a Web Server?
+
+ Web server is a computer that stores web server software and a websites's component files (e.g. HTML documents, images, CSS stylesheets, and JavaScript files).
+ It is connected to the Internet and supports physical data interchange with other devices connected to the web.
+
+ At the most basic level, whenever a browser needs a file which is hosted on a web server, the browser requests the file via HTTP. When the request reaches 
+ the correct web server (hardware), the HTTP server (software) accepts request, finds the requested document (if it doesn't then a 404 response is returned), 
+ and sends it back to the browser, also through HTTP.
+
+ To publish a website, you need either a static or a dynamic web server.
+
+ A static web server, or stack, consists of a computer (hardware) with an HTTP server (software). We call it "static" because the server sends its hosted files
+ "as-is" to your browser.A dynamic web server consists of a static web server plus extra software, most commonly an application server and a database. We call it 
+ "dynamic" because the application server updates the hosted files before sending them to your browser via the HTTP server.
+
+ Ex: Apache,IIS etc.
+
+
+ What is an Application Server?
+
+ An application server is a software framework that provides both facilities to create web applications and a server environment to run them.
+
+ Application servers are system software upon which web applications or desktop applications[citation needed] run. Application servers consist of web server 
+ connectors,[clarification needed] computer programming languages, runtime libraries, database connectors, and the administration code needed to deploy, configure, 
+ manage, and connect these components on a web host.
+
+ Web applications are computer code which run atop application servers and are written in the language(s) the application server supports and call the runtime 
+ libraries and components the application server offers.
+
+ Ex: Tomcat Application server,Java Application Severs,PHP application server etc.
+
+
+ What is Database Server? 
+
+ Back-end system/computer of a database application using client/server architecture.The back-end, sometimes called a database server, performs tasks such as 
+ data analysis, storage, data manipulation, archiving, and other non-user specific tasks.
+
+ Ex: MySQL,Oracle,DB2 etc
+
+ LAMP: LAMP stands for 'Linux Apache MySQL PHP/Python'
+
+
+ In this session we have studied installing Web Service/Server(Apache),Application Service(PHP),and Database Service(MySQL)in a Standalone Linux Server 
+ to understand the process of deployment.
+
+ NOTE: Usually,we find different servers for Web Service,Application Service,and a Database Service in Production environment(3-tier model).
+
+ NOTE: Video is supported for this topic
+
+
+Day 2: (14.03.2020)
+
+ * AWS pre-requisites:
+   ___________________
+
+  VPC:
+
+  What is an IP Address?
+
+  Every machine on a network has a unique identifier.Just as you would address a letter to send in the mail,computers use the unique identifier(IP) 
+  to send data to specific computers on a network.Most networks today, including all computers on the Internet, use the TCP/IP protocol as the standard 
+  for how to communicate on the network. In the TCP/IP protocol, the unique identifier for a computer is called its IP address.
+
+  There are two standards for IP addresses: IP Version 4 (IPv4) and IP Version 6 (IPv6). All computers with IP addresses have an IPv4 address.
+  IPv4 uses 32 binary bits to create a single unique address on the network. An IPv4 address is expressed by four numbers separated by dots. Each number 
+  is the decimal (base-10) representation for an eight-digit binary (base-2) number, also called an octet. For example: 216.27.61.137
+
+  What is CIDR?
+
+  Classless Inter-Domain Routing(CIDR) is an IP addressing scheme/method for allocating IP addresses for networks and individual devices.
+
+  IPV4 Subnetting:
+
+  Subnetting is the process of taking a network and splitting it into smaller networks, known as subnets. It’s used to free up more public IPv4 addresses 
+  and segment networks for security and easier management.
+
+  Here is what an IP or IPV4 looks like:
+
+  192.168.1.20
+
+  An IPv4 address is a 32-bit number(Four 8-bit numbers or octets seperated by a decimal point).This Octetes can range from 0 to 255 as they are binary.
+  The biggest IP address possible is 255.255.255.255
+
+
+  128	64	32	16	8	4	2	1
+  _______________________________________________________
+  1     0       0       0       0       0       0       0   = 129
+
+  When all the positions are “turned on,” they add up to 255.
+
+
+ 
+CIDR Block ?
+
+Create a VPC with 4 subnets of 4, 16, 32, remaining
+
+NOTE: https://www.youtube.com/watch?v=3eiYRPeNKMs&list=PL9ooVrP1hQOGMf-ODuo15YFz2HZsWCO8y (DevOps tools and DevOps approach)
+
+
+Day 3: (15.03.2020)
+ 
+ * Git - Version Control System(VCS):
+   __________________________________
+
+  What is a Verion Control System?
+  
+  Version Control System records changes to a file  or set of files over a time so that you can recall specific version later.
+  VCS stores the modifications in a central repository. This allows developers to easily collaborate, as they can download 
+  a new version of the software, make changes, and upload the newest revision. Every developer can see these new changes, 
+  download them, and contribute.
+
+
+  Centralized VCS Vs Distributed VCS
+
+  CVCSs have a 'single server' that contains all the versioned files,and a number of clients that check out files from that central place.
+  However,this setup has some serious downsides.If the centralized server goes down for sometime,nobody can collaborate at all or save versioned 
+  changes to anything they’re working on.If the hard disk the central database is on becomes corrupted, and proper backups haven’t been kept, 
+  you lose absolutely everything-the entire history of the project except whatever single snapshots people happen to have on their local machines. 
+
+  Ex: Subversion(SVN),CVS,and Perforce
+
+  To rectify the above said issue Distributed Version Control Systems (DVCSs) step in. In a DVCS (such as Git, Mercurial, Bazaar or Darcs), 
+  clients don’t just check out the latest snapshot of the files; rather, they fully mirror the repository, including its full history. Thus, 
+  if any server dies, and these systems were collaborating via that server, any of the client repositories can be copied back up to the server 
+  to restore it.Every clone is really a full backup of all the data.
+
+  What is Git?
+
+  Git is an open-source version control system that was started by Linus Torvalds—the same person who created Linux. Git is similar 
+  to other version control systems—Subversion, CVS, and Mercurial to name a few.
+
+  NOTE: Git only takes a snapshot of the changed file and to optimize memory Git keeps a Reference of the file that has not changed 
+        instead of making a copy of it in the new version.
+
+
+  What is GitHub?
+
+  GitHub.com is a site for online storage of Git repositories.You can create a remote repo there and PUSH code to it.In other words
+  it is a full fledged version control system powered by Git.
+
+  Basic Git Workflow:
+
+  * Modify files in your local/working directory
+  * Stage files,adding snapshots of modified files to your staging area (a buffer area in GitHub)
+  * Commit,takes the files in staging area and stores that snapshot permenently to GitHub repository.
+
+
+  Git Lifecycle:
+
+
+  +--------------+                           +-------------------------------+
+  |  Git         |   CLONE OPERATION         |                               |
+  |              |-------------------------->|Working Copy (Local Repository)|
+  |  Repository  |                           +-------------------------------+
+  +-----^--------+                                          |
+        |                                                   |
+        |                                                   |
+        |                                    +--------------*----------------+
+        |                                    |    Modify Working copy        |
+        |                                    |                               |
+        |                                    +-------------------------------+
+        |                                                   |
+        |                                                   |
+        |                                                   |
+        |                                    +--------------*----------------+
+        |                                    |    Review Changes (Owner)     |
+        |                                    |                               |
+        |                                    +-------------------------------+
+        |                                                   |
+        |                                                   |
+        |                                                   |COMMIT & PUSH OPERATIONS
+        |   PUSH OPERATION                   +--------------*----------------+
+        |____________________________________|    Commit Changes(Owner)      |
+                                             |                               |
+        ^                                    +-------------------------------+
+        |                                                   | 
+        |                                                   |
+        |                                                   |FETCH,MERGE,RESET OPERATIONS
+        |                                    +--------------*----------------+
+        |   PUSH OPERATION                   |                               |
+        -------------------------------------|      Fix Mistakes             |
+                                             +-------------------------------+
+
+
+
+ NOTE: Git generates a unique hash key for every commit and referes to commits by this ids rather than version numbers.
+
+
+ Creating a Git Repo/Clone a remote repo to your local directory:
+
+ git clone <url> <LocalDirectoryName>
+
+ Some more Commands:
+
+ git add <File> :  adds file content to the saging area
+ git commit:  records a snapshot of the staging area
+ git status: View status of your files in the working and staging directory
+ git diff: Shows diff of what is staged and what is modified but unstaged
+ git pull: Fetch from remote repo and merge into the current branch
+ git push: Push your new branches and data to remote repo
+ git init: to make a local directory a local repo
+  
