@@ -1,4 +1,4 @@
-DevOps:
+﻿DevOps:
 -------
 
 *  What is Systems/Software development life cycle (SDLC)? 
@@ -277,17 +277,19 @@ Day 3: (15.03.2020)
  NOTE: Git generates a unique hash key for every commit and referes to commits by this ids rather than version numbers.
 
 
- Creating a Git Repo/Clone a remote repo to your local directory:
+ Git Commands:
 
- git clone <url> <LocalDirectoryName>
-
- Some more Commands:
-
- git add <File> :  adds file content to the staging area
- git commit:  records a snapshot of the staging area
+ git clone <url> <LocalDirectoryName> : Creating a Git Repo/Clone a remote repo to your local directory
+ git add <File> : adds file content to the staging area (Local Repo)
+ git commit:  records a snapshot of the staging area i.e.pushes changes to version database of local repo and creates a new version
  git status: View status of your files in the working and staging directory
  git diff: Shows diff of what is staged and what is modified but unstaged
  git pull: Fetch from remote repo and merge into the current branch
  git push: Push your new branches and data to remote repo
  git init: to make a local directory a local repo
+ git branch : Shows the available branches in the repo (by default it is master branch)
+ git branch <branch_name> : Creates a new branch
+ git checkout <branch_name>: Shift to the branch mentioned
+ git megre <branch_name>: Merges changes in <branch_name> to the one you are in currently
+ 
   
